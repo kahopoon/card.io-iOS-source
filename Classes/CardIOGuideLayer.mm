@@ -110,7 +110,7 @@ typedef enum {
                              (id)[UIColor colorWithWhite:1.0f alpha:0.2f].CGColor,
                              (id)[UIColor colorWithWhite:0.0f alpha:0.2f].CGColor,
                              nil];
-    [self addSublayer:_fauxCardLayer];
+    //[self addSublayer:_fauxCardLayer];
 
     _backgroundOverlay = [CAShapeLayer layer];
     _backgroundOverlay.cornerRadius = 0.0f;

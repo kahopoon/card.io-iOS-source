@@ -67,7 +67,7 @@
       NSString *number = [cardInfo.numbers substringWithRange:NSMakeRange(i, 1)];
       CGRect numberRect = CGRectMake(x_offset, y_offset - kNumberHeight, kNumberWidth, kNumberHeight);
       if (iOS_7_PLUS) {
-        [number drawInRect:numberRect withAttributes:@{ NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraphStyle }];
+        [number drawInRect:numberRect withAttributes:@{ NSFontAttributeName: font, NSParagraphStyleAttributeName: paragraphStyle, NSForegroundColorAttributeName: [NPSColor whiteColor] }];
       } else {
         #pragma clang diagnostic push
         #pragma clang diagnostic ignored "-Wdeprecated-declarations"
